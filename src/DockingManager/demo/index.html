@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="../style/DockingManager.css" />
+    <style>
+        html, body, #dockingRect {
+            margin: 0;
+            padding: 0;
+        }
+
+        #dockingRect {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="dockingRect">
+    </div>
+    <script src="../script/DockingManager.js"></script>
+    <script>
+        var dm = new dock.DockingManager("#dockingRect");
+        dm.init();
+    </script>
+</body>
+</html>
