@@ -10,7 +10,7 @@
             padding: 0;
         }
 
-        #dockingRect {
+        #dockingRect, #left1, #left2, #left3, #right1, #right2, #right3, #bottom, #fill {
             position: absolute;
             left: 0;
             right: 0;
@@ -53,7 +53,7 @@
 </head>
 <body>
     <div id="dockingRect">
-        <div id="left1" data-dock-path="left" data-dock-title="Left 1"></div>
+        <div id="left1" data-dock-path="left" data-dock-title="Left 1" data-dock-hideable="true"></div>
         <div id="left2" data-dock-path="left" data-dock-title="Left 2"></div>
         <div id="left3" data-dock-path="left" data-dock-title="Left 3"></div>
 
@@ -66,6 +66,8 @@
         <div id="fill" data-dock-path="fill" data-dock-title="Fill"></div>
     </div>
     <script src="../script/DockingManager.js"></script>
+    <script src="../script/DockingPane.js"></script>
+    <script src="../script/DockingContainer.js"></script>
     <script>
         var dm = new dock.DockingManager("#dockingRect");
         dm.init();
