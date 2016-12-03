@@ -17,10 +17,53 @@
             top: 0;
             bottom: 0;
         }
+
+        #left1 {
+            background-color: #400;
+        }
+
+        #left2 {
+            background-color: #800;
+        }
+
+        #left3 {
+            background-color: #b00;
+        }
+
+        #right1 {
+            background-color: #004;
+        }
+
+        #right2 {
+            background-color: #008;
+        }
+
+        #right3 {
+            background-color: #00b;
+        }
+
+        #bottom {
+            background-color: #444;
+        }
+
+        #fill {
+            background-color: #bbb;
+        }
     </style>
 </head>
 <body>
     <div id="dockingRect">
+        <div id="left1" data-dock-path="left" data-dock-title="Left 1"></div>
+        <div id="left2" data-dock-path="left" data-dock-title="Left 2"></div>
+        <div id="left3" data-dock-path="left" data-dock-title="Left 3"></div>
+
+        <div id="right1" data-dock-path="right" data-dock-title="Right 1"></div>
+        <div id="right2" data-dock-path="right" data-dock-title="Right 2"></div>
+        <div id="right3" data-dock-path="right" data-dock-title="Right 3"></div>
+
+        <div id="bottom" data-dock-path="bottom" data-dock-title="bottom"></div>
+
+        <div id="fill" data-dock-path="fill" data-dock-title="Fill"></div>
     </div>
     <script src="../script/DockingManager.js"></script>
     <script>

@@ -23,15 +23,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="demo\index.html" />
-    <Content Include="script\DockingManager.js" />
+    <Content Include="script\DockingManager.js">
+      <DependentUpon>DockingManager.ts</DependentUpon>
+    </Content>
+    <Content Include="script\DockingManager.js.map">
+      <DependentUpon>DockingManager.ts</DependentUpon>
+    </Content>
+    <Content Include="style\DockingManager.css">
+      <DependentUpon>DockingManager.less</DependentUpon>
+    </Content>
+    <Content Include="style\DockingManager.min.css">
+      <DependentUpon>DockingManager.css</DependentUpon>
+    </Content>
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="script\DockingManager.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="script\DockingManager.js.map" />
-    <Content Include="style\DockingManager.css" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <None Include="style\DockingManager.less" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
